@@ -14,12 +14,12 @@ AFRAME.registerComponent("bullets", {
   
           bullet.setAttribute("material", "color", "blue");
   
-          var cam = document.querySelector("#camera");
+          var cam = document.querySelector("#camera-rig");
           pos = cam.getAttribute("position");
   
           bullet.setAttribute("position", {
             x: pos.x,
-            y: pos.y ,
+            y: pos.y+2 ,
             z: pos.z,
           });
   
